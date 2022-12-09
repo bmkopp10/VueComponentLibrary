@@ -1,0 +1,125 @@
+:root {
+  --color-primary: rgba(4 111 102 / 100%);
+  --color-primary-hover: 1.1;
+  --color-primary-opacity: rgba(4 111 102 / 30%);
+  --color-primary-inverse: rgba(255 255 255 / 100%);
+
+  --color-secondary: rgba(108 117 125 / 100%);
+  --color-secondary-hover: 1.1;
+  --color-secondary-opacity: rgba(108 117 125 / 30%);
+  --color-secondary-inverse: rgba(255 255 255 / 100%);
+
+  // old color was 204 224 157
+  --color-tertiary: rgba(232 230 196 / 100%);
+  --color-tertiary-hover: .9;
+  --color-tertiary-opacity: rgba(232 230 196 / 30%);
+  --color-tertiary-inverse: rgba(45 45 45 / 100%);
+
+  --border-radius: 2px;
+  --border-secondary-radius: 10px;
+}
+
+// BACKGROUND
+
+.bg-primary {
+  background-color: var(--color-primary)!important;
+  color: var(--color-primary-inverse)!important;
+}
+
+.bg-secondary {
+  background-color: var(--color-secondary)!important;
+  color: var(--color-secondary-inverse)!important;
+}
+
+.bg-tertiary {
+  background-color: var(--color-tertiary)!important;
+  color: var(--color-tertiary-inverse)!important;
+}
+
+.bg-primary-opacity {
+  background-color: var(--color-primary-opacity)!important;
+  color: var(--color-primary-inverse)!important;
+}
+
+.bg-secondary-opacity {
+  background-color: var(--color-secondary-opacity)!important;
+  color: var(--color-secondary-inverse)!important;
+}
+
+.bg-tertiary-opacity {
+  background-color: var(--color-tertiary-opacity)!important;
+  color: var(--color-tertiary-inverse)!important;
+}
+
+.bg-danger {
+  background-color: $danger;
+  color: white;
+}
+
+// COLOR
+
+.primary {
+  color: var(--color-primary)!important;
+}
+
+.secondary {
+  color: var(--color-secondary)!important;
+}
+
+.tertiary {
+  color: var(--color-tertiary)!important;
+}
+
+.danger {
+  color: $danger;
+}
+
+// BORDER RADIUS
+
+input, button, .alert, select, .btn-nav-parent, textarea {
+  border-radius: var(--border-radius);
+}
+
+
+// BORDER COLOR
+
+.primary-border-focus {
+  border-color: var(--color-primary-opacity)!important;
+  box-shadow: 0 0 0 0.2rem var(--color-primary-opacity)!important;
+}
+
+.secondary-border-focus {
+  border-color: var(--color-secondary-opacity)!important;
+  box-shadow: 0 0 0 0.2rem var(--color-secondary-opacity)!important;
+}
+
+.tertiary-border-focus {
+  border-color: var(--color-tertiary-opacity)!important;
+  box-shadow: 0 0 0 0.2rem var(--color-tertiary-opacity)!important;
+}
+
+// OUTLINE
+
+.primary-outline {
+  box-shadow: 0 0 0 2pt var(--color-primary) !important;
+}
+
+.secondary-outline {
+  box-shadow: 0 0 0 2pt var(--color-secondary) !important;
+}
+
+.tertiary-outline {
+  box-shadow: 0 0 0 2pt var(--color-tertiary) !important;
+}
+
+// NAV
+// TODO find out if this is being set anywhere else, why do we need the !important?
+
+.nav-link {
+  color: var(--color-primary) !important;
+}
+
+.nav-link.active {
+  color: white !important;
+  background-color: var(--color-primary) !important;
+}

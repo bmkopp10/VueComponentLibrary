@@ -1,0 +1,21 @@
+.form-input {
+@extend .primary-border-focus
+}
+
+
+.form-control:focus {
+  @extend .form-input
+}
+
+.form-check-input:focus, .form-select:focus {
+  @extend .form-input
+}
+
+.form-check-input:checked {
+  @extend .bg-primary;
+  border-color: var(--color-primary)!important;
+}
+
+.form-select, .input-group-text {
+  font-size: 13px;
+}

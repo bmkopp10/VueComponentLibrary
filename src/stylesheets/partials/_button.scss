@@ -1,0 +1,74 @@
+.btn {
+  border: 1px solid transparent!important;
+  border-radius: var(--border-radius);
+  font-size: 0.9rem;
+  position: relative;
+  font-weight: bold;
+}
+
+.btn-disabled {
+  opacity: .5;
+  cursor: not-allowed !important;
+}
+
+.btn-sm {
+  font-size: 0.775rem!important;
+}
+
+.btn:hover {
+  border: 1px solid transparent;
+}
+
+.btn-primary {
+  @extend .btn;
+  @extend .bg-primary
+}
+
+.btn-secondary {
+  @extend .btn;
+  @extend .bg-secondary
+}
+
+.btn-tertiary {
+  @extend .btn;
+  @extend .bg-tertiary
+}
+
+.btn-primary:hover {
+  filter: brightness(var(--color-primary-hover)) !important;
+}
+
+.btn-secondary:hover {
+  filter: brightness(var(--color-secondary-hover)) !important;
+}
+
+.btn-tertiary:hover {
+  filter: brightness(var(--color-tertiary-hover)) !important;
+}
+
+.btn-primary:focus {
+  @extend .primary-border-focus
+}
+
+.btn-secondary:focus {
+  @extend .secondary-border-focus
+}
+
+.btn-tertiary:focus {
+  @extend .tertiary-border-focus
+}
+.btn-primary-link {
+  @extend .primary
+}
+.btn-secondary-link {
+  @extend .secondary
+}
+.btn-tertiary-link{
+  @extend .tertiary
+}
+.btn-success-link{}
+.btn-danger-link{}
+.btn-warning-link{}
+.btn-info-link{}
+.btn-light-link{}
+.btn-dark-link{}
