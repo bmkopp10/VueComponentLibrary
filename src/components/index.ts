@@ -1,4 +1,5 @@
 import BBadge from "@/components/BBadge.vue";
+import type {App} from "vue";
 // import BAdvancedTable from "@/components/BAdvancedTable.vue";
 // import BBanner from "@/components/BBanner.vue";
 // import BButton from "@/components/BButton.vue";
@@ -33,8 +34,10 @@ import BBadge from "@/components/BBadge.vue";
 // import Popover from "@/components/Popover.vue";
 // import Timepicker from "@/components/Timepicker.vue";
 
-export {
-    BBadge,
+export default {
+    install: (app: App) => {
+        app.component("BBadge", BBadge)
+    }
     // BAdvancedTable,
     // BBanner,
     // BButton,

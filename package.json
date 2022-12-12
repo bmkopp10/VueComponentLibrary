@@ -1,6 +1,6 @@
 {
-  "name": "vue-component-library",
-  "version": "0.0.1",
+  "name": "@bmkopp10/vue-component-library",
+  "version": "0.0.2",
   "files": [
     "dist"
   ],
@@ -43,5 +43,14 @@
     "tailwindcss": "^2.2.17"
   },
   "description": "This template should help get you started developing with Vue 3 in Vite.",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bmkopp10/VueComponentLibrary.git"
+  },
+  "author": "Brian Kopp",
+  "bugs": {
+    "url": "https://github.com/bmkopp10/VueComponentLibrary/issues"
+  },
+  "homepage": "https://github.com/bmkopp10/VueComponentLibrary#readme"
 }
